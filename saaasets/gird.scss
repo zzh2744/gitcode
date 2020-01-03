@@ -1,0 +1,7 @@
+@each $w in xs,sm,md,lg{
+    @for $i from 1 through 12 {
+        .col-#{$w}-#{$i}{
+            width :percentage($i/12);
+        }
+    }
+}

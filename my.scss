@@ -1,0 +1,48 @@
+@import './saaasets/var.scss';
+@import './saaasets/gird.scss';
+@import './saaasets/navbar.scss';
+@import './saaasets/public.scss';
+@import './saaasets/fn.scss';
+
+
+    
+
+
+
+.mydiv{
+    width: $width;
+    height: $height;
+    background-color: $bgc;
+    color: $fc;
+    font: {
+        size: $fs;
+        weight: $fw;
+        style: $fsty;
+    }
+    &-ccd{
+        font-size: 30px;
+    }
+    &:hover{
+        background-color: orange;
+    }
+    & .d1{
+        &:hover{
+            color: purple;
+        }
+    }
+    a{
+        &:hover{
+            color: #000;
+        }
+        text-decoration: none;
+        color: blue;
+    }
+}
+.box1{
+    @include fn(50%,20px ,green );
+    color: seashell;
+};
+.box2{
+    @include fn(75%,20px ,grey );
+    color: orangered;
+}

@@ -1,0 +1,14 @@
+@mixin fn($width,$height,$bgc) {
+    width: $width;
+    height: $height;
+    background-color: $bgc;
+};
+
+// .box1{
+//     @include fn(50%,20px ,green );
+//     color: seashell;
+// };
+// .box2{
+//     @include fn(50%,20px ,grey );
+//     color: orangered;
+// }
